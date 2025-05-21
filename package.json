@@ -1,0 +1,33 @@
+{
+  "name": "polymer-order-processor",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "compile": "hardhat compile",
+    "deploy:order-processor": "hardhat run scripts/deployOrderProcessor.js",
+    "deploy:order-processor:optimism": "hardhat run scripts/deployOrderProcessor.js --network optimismSepolia",
+    "deploy:order-processor:base": "hardhat run scripts/deployOrderProcessor.js --network baseSepolia",
+    "deploy:order-processor:mode": "hardhat run scripts/deployOrderProcessor.js --network modeSepolia",
+    "deploy:order-processor:bob": "hardhat run scripts/deployOrderProcessor.js --network bobSepolia",
+    "deploy:order-processor:ink": "hardhat run scripts/deployOrderProcessor.js --network inkSepolia",
+    "deploy:order-processor:unichain": "hardhat run scripts/deployOrderProcessor.js --network unichainSepolia",
+    "deploy:order-processor:t3rn": "hardhat run scripts/deployOrderProcessor.js --network t3rn",
+    "deploy:order-processor:all": "node scripts/deploy-all-order-processor.js",
+    "test": "hardhat test"
+  },
+  "keywords": ["polymer", "cross-chain", "proof", "order-processor"],
+  "author": "",
+  "license": "ISC",
+  "description": "OrderProcessor contract using Polymer proofs for cross-chain order management",
+  "dependencies": {
+    "axios": "^1.7.9",
+    "chalk": "^4.1.2",
+    "dotenv": "^16.4.7",
+    "ethers": "^6.13.4",
+    "inquirer": "^8.2.4"
+  },
+  "devDependencies": {
+    "@nomicfoundation/hardhat-toolbox": "^4.0.0",
+    "hardhat": "^2.19.1"
+  }
+}
