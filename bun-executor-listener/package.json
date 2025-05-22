@@ -1,0 +1,17 @@
+{
+  "name": "bun-executor-listener",
+  "module": "index.ts",
+  "type": "module",
+  "private": true,
+  "devDependencies": {
+    "@types/bun": "latest"
+  },
+  "peerDependencies": {
+    "typescript": "^5"
+  },
+  "dependencies": {
+    "@t3rn/sdk": "^0.4.11",
+    "dotenv": "^16.5.0",
+    "ethers": "^6.14.1"
+  }
+}
